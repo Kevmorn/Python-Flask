@@ -1,0 +1,8 @@
+import sqlalchemy
+
+engine = sqlalchemy.create_engine('sqlite:///usuarios.db', echo=True)
+
+from sqlalchemy.orm import declarative_base
+from sqlalchemy import Column, Integer, String
+
+Base = declarative_base()
